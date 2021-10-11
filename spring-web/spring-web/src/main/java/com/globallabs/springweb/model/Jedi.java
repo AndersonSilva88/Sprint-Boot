@@ -30,4 +30,8 @@ public class Jedi {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public Jedi get() {
+        return get();
+    }
 }

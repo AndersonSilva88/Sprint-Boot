@@ -30,13 +30,13 @@ public class JediController {
         return modelAndView;
     }
 
-    @GetMapping("new-jedi")
+    @GetMapping("/new-jedi")
     public ModelAndView newJedi(){
 
         final ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("new-jedi");
 
-        modelAndView.addObject("jedi", new Jedi());
+        modelAndView.addObject("jedi", new Jedi("luke"));
         return modelAndView;
     }
     @PostMapping("/jedi")

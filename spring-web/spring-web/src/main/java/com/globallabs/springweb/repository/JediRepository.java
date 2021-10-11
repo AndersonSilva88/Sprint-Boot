@@ -22,4 +22,18 @@ public class JediRepository {
     public void add(final Jedi jedi) {
         this.jedi.add(jedi);
     }
+
+    public List<Jedi> findAll() {
+        return getAllJedi();
+    }
+
+    public Jedi findById(Long id) {
+        return findById(id);
+    }
+
+    public void delete(Jedi jedi) {
+    }
+
+    public Object save(Jedi jedi) {
+    }
 }
